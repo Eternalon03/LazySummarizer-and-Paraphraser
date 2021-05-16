@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- This MUST be before background -->
+    <script src="background.js" type="text/javascript"></script>   
+    
+        
+  </head>
+  <body>
+    
+    <div style="padding: 5px 10px 10px 10px;"> 
+
+      <h1>Here's a Quick Summary For You!</h1>
+
+      <h3 id="header1"></h3>
+
+      <h3 id="header2"></h3>
+
+      <p id="mytext" style="font-family:verdana;font-size:14px;line-height:1.4">Fetching info...</p>
+
+    </div> 
+
+    <div style="padding: 20px 100px 30px 20px;">           
+        <h4>Want more or less sentences? The default is 8: </h4>         
+        <input id="name_textbox" />                   
+        <button id="ok_btn" type="button">OK</button>
+    </div> 
+
+    <style>
+      .button { 
+        height:30px;
+        width:137px;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        /* padding: 15px 80px; */
+        text-align: center; 
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 4px;
+        cursor: pointer;
+     }
+
+     .button2 {background-color: #008CBA;} /* Blue */
+
+   </style>
+
+   <button id="keywords_btn" class="button">Key Words</button>
+   <button id="paraphrase_btn" class="button button2">Paraphrase</button>
+
+   <p id="actual_keywords" style="font-family:verdana;font-size:14px;line-height:1.4"> </p>
+
+   <div style="padding: 5px 10px 10px 10px;"> 
+   <p id="actual_paraphrase" style="font-family:verdana;font-size:14px;line-height:1.4"> </p>
+   </div>
+
+
+
+
+
+  </body>
+
+
+
+
+</html> 

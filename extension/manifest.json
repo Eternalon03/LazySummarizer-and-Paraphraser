@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "LazySummarizerandAnalyzer",
+	"description": "Summarizes long articles, points out important keywords, paraphrase option",
+	"version": "0.1",
+	"author": "Nicole Planeta",
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": {
+        "default_popup": "hello.html",
+		"default_icon": "icon.png",
+		"default_title": "LazySummarizerandAnalyzer"
+	},
+	"permissions": ["activeTab", "http://127.0.0.1:5000/*"],
+	"background": {
+		"scripts": ["background.js"], 
+		"persistent": false 
+	}
+ 
+}
